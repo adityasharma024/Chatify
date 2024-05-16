@@ -34,7 +34,7 @@ const Details = () => {
       <div className="user">
         <img src={user?.avatar || "./avatar.png"} alt="" />
         <h2>{user?.username}</h2>
-        <p>{user.status}</p>
+        <p>{user ? user.status : ''}</p>
       </div>
       <div className="info">
         <div className="option">
